@@ -39,7 +39,7 @@ function Reveal({ children, delay = 0, className = '' }) {
 const NAV_ITEMS = ['Work', 'Services', 'About', 'Contact'];
 
 const PORTFOLIO = [
-  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)' },
+  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)' <img src="/pump-sunrise.jpg" alt="Description" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />},
   { title: 'Friday Night Lights', category: 'SPORTS', desc: 'Youth league action photography. Every player. Every game. Gallery delivered in 48hrs.', color: 'var(--warm-orange)' },
   { title: 'Main Street Parade', category: 'EVENTS', desc: 'Community event coverage — parades, festivals, and everything worth showing up for.', color: 'var(--concrete)' },
   { title: 'Heavy Iron', category: 'CONSTRUCTION', desc: 'Equipment & fleet photography that makes your machines look as good as they perform.', color: 'var(--orange)' },
