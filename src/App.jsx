@@ -258,7 +258,7 @@ export default function App() {
           {filtered.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
               <div className="card-hover" style={{ background: 'var(--dark-gray)', border: '1px solid var(--steel)', overflow: 'hidden', cursor: 'pointer' }}>
-                {/DSC01577.JPG}
+                <img src="/pump-sunrise.jpg" alt="Description" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 <div style={{
                   height: 220,
                   background: `linear-gradient(135deg, var(--steel) 0%, var(--dark-gray) 100%)`,
