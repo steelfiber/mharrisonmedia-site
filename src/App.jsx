@@ -258,15 +258,16 @@ export default function App() {
           {filtered.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
               <div className="card-hover" style={{ background: 'var(--dark-gray)', border: '1px solid var(--steel)', overflow: 'hidden', cursor: 'pointer' }}>
-                <img
-  src={item.image}
-  alt={item.title}
-  style={{
-    width: '100%', height: 220,
-    objectFit: 'cover',
-    borderBottom: `3px solid ${item.color}`,
-  }}
-/>
+                <div style={{
+                  height: 220,
+                  position: 'relative', overflow: 'hidden',
+                  borderBottom: `3px solid ${item.color}`,
+                }}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
                   <div className="texture-overlay" />
                   <span style={{
                     fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700,
