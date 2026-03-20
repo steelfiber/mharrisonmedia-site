@@ -418,7 +418,7 @@ export default function App() {
               position: 'relative', overflow: 'hidden',
             }}>
               <img
-                src="/DSC09515.JPG"
+                src="/headshot-1.jpg"
                 alt="Matthew Harrison"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
