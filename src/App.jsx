@@ -39,7 +39,7 @@ function Reveal({ children, delay = 0, className = '' }) {
 const NAV_ITEMS = ['Work', 'Services', 'About', 'Contact'];
 
 const PORTFOLIO = [
-  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)' },
+  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)', image: '/pump-sunrise.jpg' },
   { title: 'Friday Night Lights', category: 'SPORTS', desc: 'Youth league action photography. Every player. Every game. Gallery delivered in 48hrs.', color: 'var(--warm-orange)' },
   { title: 'Main Street Parade', category: 'EVENTS', desc: 'Community event coverage — parades, festivals, and everything worth showing up for.', color: 'var(--concrete)' },
   { title: 'Heavy Iron', category: 'CONSTRUCTION', desc: 'Equipment & fleet photography that makes your machines look as good as they perform.', color: 'var(--orange)' },
@@ -258,13 +258,15 @@ export default function App() {
           {filtered.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
               <div className="card-hover" style={{ background: 'var(--dark-gray)', border: '1px solid var(--steel)', overflow: 'hidden', cursor: 'pointer' }}>
-                <div style={{
-                  height: 220,
-                  background: `linear-gradient(135deg, var(--steel) 0%, var(--dark-gray) 100%)`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  borderBottom: `3px solid ${item.color}`,
-                  position: 'relative', overflow: 'hidden',
-                }}>
+                <img
+  src={item.image}
+  alt={item.title}
+  style={{
+    width: '100%', height: 220,
+    objectFit: 'cover',
+    borderBottom: `3px solid ${item.color}`,
+  }}
+/>
                   <div className="texture-overlay" />
                   <span style={{
                     fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700,
