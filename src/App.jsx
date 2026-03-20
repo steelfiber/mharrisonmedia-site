@@ -39,12 +39,12 @@ function Reveal({ children, delay = 0, className = '' }) {
 const NAV_ITEMS = ['Work', 'Services', 'About', 'Contact'];
 
 const PORTFOLIO = [
-  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)', image: '/public/pump-sunrise.jpg' },
-  { title: 'Friday Night Lights', category: 'SPORTS', desc: 'Youth league action photography. Every player. Every game. Gallery delivered in 48hrs.', color: 'var(--warm-orange)' },
-  { title: 'Main Street Parade', category: 'EVENTS', desc: 'Community event coverage — parades, festivals, and everything worth showing up for.', color: 'var(--concrete)' },
-  { title: 'Heavy Iron', category: 'CONSTRUCTION', desc: 'Equipment & fleet photography that makes your machines look as good as they perform.', color: 'var(--orange)' },
-  { title: 'Championship Run', category: 'SPORTS', desc: 'Season-long coverage. From first practice to the final buzzer.', color: 'var(--warm-orange)' },
-  { title: 'County Fair', category: 'EVENTS', desc: 'Full event documentation — the moments, the people, the energy.', color: 'var(--concrete)' },
+  { title: 'Steel & Concrete', category: 'CONSTRUCTION', desc: 'Fleet documentation & finished project showcase for regional contractors.', color: 'var(--orange)', image: '/pump-sunrise.jpg' },
+  { title: 'Friday Night Lights', category: 'SPORTS', desc: 'Youth league action photography. Every player. Every game. Gallery delivered in 48hrs.', color: 'var(--warm-orange)', image: '/dribbling.jpg' },
+  { title: 'Main Street Parade', category: 'EVENTS', desc: 'Community event coverage — parades, festivals, and everything worth showing up for.', color: 'var(--concrete)', image: '/124th-on-main.jpg' },
+  { title: 'Heavy Iron', category: 'CONSTRUCTION', desc: 'Equipment & fleet photography that makes your machines look as good as they perform.', color: 'var(--orange)', image: '/semi-lineup.jpg' },
+  { title: 'Championship Run', category: 'SPORTS', desc: 'Season-long coverage. From first practice to the final buzzer.', color: 'var(--warm-orange)', image: '/jump-ball.jpg' },
+  { title: 'County Fair', category: 'EVENTS', desc: 'Full event documentation — the moments, the people, the energy.', color: 'var(--concrete)', image: '/car-at-oriellys.jpg' },
 ];
 
 const SERVICES = [
