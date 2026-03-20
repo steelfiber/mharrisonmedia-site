@@ -362,8 +362,7 @@ export default function App() {
                   All delivered work is available through my SmugMug storefront. Individual downloads, full galleries, and prints.
                 </p>
               </div>
-              {/* TODO: Replace # with your SmugMug URL */}
-              <a href="#" className="cta-btn-outline">Browse Galleries</a>
+              <a href="https://matthewharrison.smugmug.com/" target="_blank" rel="noopener noreferrer" className="cta-btn-outline">Browse Galleries</a>
             </div>
           </Reveal>
         </div>
@@ -413,30 +412,17 @@ export default function App() {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            {/* TODO: Replace this placeholder with an actual <img> tag pointing to your photo */}
             <div className="about-photo" style={{
               height: 500,
-              background: 'linear-gradient(180deg, var(--steel) 0%, var(--dark-gray) 100%)',
               border: '1px solid var(--steel)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
               position: 'relative', overflow: 'hidden',
             }}>
+              <img
+                src="/DSC09515.JPG"
+                alt="Matthew Harrison"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
               <div className="texture-overlay" />
-              <div style={{ textAlign: 'center', position: 'relative' }}>
-                <div style={{
-                  fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700,
-                  fontSize: '1.2rem', letterSpacing: '0.2em', textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,0.08)',
-                }}>
-                  Your Photo Here
-                </div>
-                <div style={{
-                  fontFamily: "'DM Sans', sans-serif", fontSize: '0.75rem',
-                  color: 'rgba(255,255,255,0.06)', marginTop: 8,
-                }}>
-                  Replace with headshot or action photo
-                </div>
-              </div>
               {/* Orange corner accent */}
               <div style={{ position: 'absolute', bottom: 0, left: 0, width: 80, height: 4, background: 'var(--orange)' }} />
               <div style={{ position: 'absolute', bottom: 0, left: 0, width: 4, height: 80, background: 'var(--orange)' }} />
@@ -514,10 +500,9 @@ export default function App() {
               paddingTop: 40, borderTop: '1px solid var(--steel)',
             }}>
               {[
-                /* TODO: Replace # with your actual URLs */
                 { label: 'Instagram', value: '@mharrisonmedia', href: 'https://instagram.com/mharrisonmedia' },
-                { label: 'Galleries', value: 'SmugMug', href: '#' },
-                { label: 'Support', value: 'Buy Me a Coffee', href: '#' },
+                { label: 'Galleries', value: 'SmugMug', href: 'https://matthewharrison.smugmug.com/' },
+                { label: 'Support', value: 'Buy Me a Coffee', href: 'https://buymeacoffee.com/matthewharrison' },
               ].map((link) => (
                 <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" style={{ textAlign: 'center', textDecoration: 'none' }}>
                   <div style={{
